@@ -1,0 +1,21 @@
+[package]
+name = "arrow-interop"
+version.workspace = true
+edition.workspace = true
+description = "Arrow ↔ GPU columnar conversion utilities for the GPU OLAP engine"
+
+[dependencies]
+arrow.workspace = true
+arrow-array.workspace = true
+arrow-schema.workspace = true
+arrow-buffer.workspace = true
+parquet.workspace = true
+
+anyhow.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+serde.workspace = true
+
+[lib]
+name = "arrow_interop"
+path = "src/lib.rs"
