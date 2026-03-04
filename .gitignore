@@ -1,0 +1,36 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# CUDA build artefacts
+*.o
+*.ptx
+*.cubin
+*.fatbin
+*.a
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+dist/
+*.egg-info/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test data / generated Parquet files
+data/*.parquet
+data/*.arrow
+
+# Benchmark results
+criterion/
